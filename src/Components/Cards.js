@@ -44,7 +44,7 @@ const Cards = ({ sections = [] }) => {
       <main>
         <section className="content">
           {sections.map((section, index) => (
-            <div key={index}>
+            <div style={{margin:"5vw 0"}} key={index}>
               <h2>{section.title}</h2>
               <div className="diagonal-line"></div>
               <div className="cards">
