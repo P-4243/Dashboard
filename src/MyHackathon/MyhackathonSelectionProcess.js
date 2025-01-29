@@ -1,131 +1,142 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckCircle, faChevronLeft, faChevronDown, faCircleXmark,faClipboardCheck} from '@fortawesome/free-solid-svg-icons';
+import { faCheckCircle, faChevronDown, faCircleXmark, faClipboardCheck } from '@fortawesome/free-solid-svg-icons';
 import "./App1.css";
 
-const MyhackathonSelectionProcess = () => {
+const SelectionProcess = () => {
     const [activeIndex, setActiveIndex] = useState(null);
 
+    // Debugging: Check when activeIndex changes
+    useEffect(() => {
+        console.log("Dropdown updated. Active index:", activeIndex);
+    }, [activeIndex]);
+
     const toggleFaq = (index) => {
-        setActiveIndex(activeIndex === index ? null : index);
+        setActiveIndex(prevIndex => (prevIndex === index ? null : index));
     };
 
     return (
         <div className="selection-process-container">
             <div className="header-line">
-                <FontAwesomeIcon icon={faChevronLeft} />
-                <h2 className="faq-heading">Hackathon Details</h2>
+                <h2 className="faq-heading">Hackathon Selection Process</h2>
             </div>
 
             <div className="faq-container">
-                <div className="faq-item">
-                    <div className="faq-question" onClick={() => toggleFaq(0)}>
-                    Team Formation
+                {/* Registration */}
+                <div className="faqItem">
+                    <div className="faqQuestion" onClick={() => toggleFaq(0)}>
+                        Registration
                         <FontAwesomeIcon icon={faChevronDown} />
                     </div>
                     {activeIndex === 0 && (
-                        <div className="faq-answer">
+                        <div className="faqAnswer">
                             <div className="faq-task">
-                                <p>Team Size And Team Name</p>
+                                <p>Registration Deadline: 10/02/2025</p>
                                 <FontAwesomeIcon icon={faCheckCircle} className="check-icon" />
                             </div>
                             <div className="faq-task">
-                                <p> Role Assignment</p>
+                                <p>Completed Registration</p>
                                 <FontAwesomeIcon icon={faCheckCircle} className="check-icon" />
                             </div>
                         </div>
                     )}
                 </div>
 
-                <div className="faq-item">
-                    <div className="faq-question" onClick={() => toggleFaq(1)}>
-                    Idea Submission
+                {/* Team Formation */}
+                <div className="faqItem">
+                    <div className="faqQuestion" onClick={() => toggleFaq(1)}>
+                        Team Formation
                         <FontAwesomeIcon icon={faChevronDown} />
                     </div>
                     {activeIndex === 1 && (
-                        <div className="faq-answer">
+                        <div className="faqAnswer">
                             <div className="faq-task">
-                                <p>Problem Statement</p>
+                                <p>Teams Formed: 12/02/2025</p>
                                 <FontAwesomeIcon icon={faCheckCircle} className="check-icon" />
                             </div>
                             <div className="faq-task">
-                                <p>Target Audience</p>
+                                <p>Assigned Mentor</p>
                                 <FontAwesomeIcon icon={faCheckCircle} className="check-icon" />
-                            </div>
-                            <div className="faq-task">
-                                <p>Estimated Time to Completion</p>
-                                <FontAwesomeIcon icon={faCheckCircle} className="check-icon" />  
-                            </div>
-                                <div className="faq-task">
-                                <p>Solution Overview</p>
-                                <FontAwesomeIcon icon={faCheckCircle} className="check-icon" />  
                             </div>
                         </div>
                     )}
                 </div>
 
-                <div className="faq-item">
-                    <div className="faq-question" onClick={() => toggleFaq(2)}>
-                    Evaluation
+                {/* Idea Submission */}
+                <div className="faqItem">
+                    <div className="faqQuestion" onClick={() => toggleFaq(2)}>
+                        Idea Submission
                         <FontAwesomeIcon icon={faChevronDown} />
                     </div>
                     {activeIndex === 2 && (
-                        <div className="faq-answer">
+                        <div className="faqAnswer">
                             <div className="faq-task">
-                                <p>Evaluation Stage</p>
+                                <p>Idea Submission Deadline: 15/02/2025</p>
                                 <FontAwesomeIcon icon={faCheckCircle} className="check-icon" />
                             </div>
                             <div className="faq-task">
-                                <p>Detailed Review</p>
-                                <FontAwesomeIcon icon={faCheckCircle} className="check-icon" />
-                            </div>
-                            <div className="faq-task">
-                                <p>Score Range</p>
+                                <p>Idea Approved</p>
                                 <FontAwesomeIcon icon={faCheckCircle} className="check-icon" />
                             </div>
                         </div>
                     )}
                 </div>
-                <div className="faq-item">
-                    <div className="faq-question" onClick={() => toggleFaq(3)}>
-                    Prefinal round
+
+                {/* Prototype Development */}
+                <div className="faqItem">
+                    <div className="faqQuestion" onClick={() => toggleFaq(3)}>
+                        Prototype Development
                         <FontAwesomeIcon icon={faChevronDown} />
                     </div>
                     {activeIndex === 3 && (
-                        <div className="faq-answer">
+                        <div className="faqAnswer">
                             <div className="faq-task">
-                                <p>Prototype Submission</p>
-                                <FontAwesomeIcon icon={faCheckCircle} className="check-icon" />
-                                </div>
-                            <div className="faq-task">
-                                <p>Presentation Submission</p>
+                                <p>Prototype Development Phase</p>
                                 <FontAwesomeIcon icon={faCheckCircle} className="check-icon" />
                             </div>
                             <div className="faq-task">
-                                <p>Q&A Session</p>
+                                <p>Prototype Submitted</p>
                                 <FontAwesomeIcon icon={faCheckCircle} className="check-icon" />
                             </div>
                         </div>
                     )}
-                </div> 
-                <div className="faq-item">
-                    <div className="faq-question" onClick={() => toggleFaq(4)}>
-                    Final round
+                </div>
+
+                {/* Pitch Presentation */}
+                <div className="faqItem">
+                    <div className="faqQuestion" onClick={() => toggleFaq(4)}>
+                        Pitch Presentation
                         <FontAwesomeIcon icon={faChevronDown} />
                     </div>
                     {activeIndex === 4 && (
-                        <div className="faq-answer">
+                        <div className="faqAnswer">
                             <div className="faq-task">
-                                <p>Q&A with Judges</p>
+                                <p>Presentation Date: 20/02/2025</p>
                                 <FontAwesomeIcon icon={faCheckCircle} className="check-icon" />
                             </div>
                             <div className="faq-task">
-                                <p>Final Score And Winner Announcement</p>
+                                <p>Status: Finalists Selected</p>
                                 <FontAwesomeIcon icon={faCheckCircle} className="check-icon" />
                             </div>
                         </div>
                     )}
-                </div> 
+                </div>
+
+                {/* Winner Announcement */}
+                <div className="faqItem">
+                    <div className="faqQuestion" onClick={() => toggleFaq(5)}>
+                        Winner Announcement
+                        <FontAwesomeIcon icon={faChevronDown} />
+                    </div>
+                    {activeIndex === 5 && (
+                        <div className="faqAnswer">
+                            <div className="faq-task">
+                                <p>Winner Announced on 25/02/2025</p>
+                                <FontAwesomeIcon icon={faCheckCircle} className="check-icon" />
+                            </div>
+                        </div>
+                    )}
+                </div>
             </div>
 
             {/* Button positioned at the bottom right */}
@@ -136,4 +147,4 @@ const MyhackathonSelectionProcess = () => {
     );
 };
 
-export default MyhackathonSelectionProcess;
+export default SelectionProcess;

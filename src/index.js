@@ -25,12 +25,11 @@ import WebinarCertificates from "./MyCertificates/WebinarCertificates.js";
 import CloudComputing from "./MyWorkshop/CloudComputing.js";
 import Mentor from "./MyMentor/Mentor.js";
 import MoreMentor from "./MyMentor/MoreMentor.js";
-const root = ReactDOM.createRoot(document.getElementById("root"));
 
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Navbar/>
-    
      <Router> 
       <Dashboard/>
           <Routes>  
@@ -38,7 +37,6 @@ root.render(
           <Route path="/Home" element={<Home/>}/>    
           <Route path="/Mentor" element={<Mentor/>}/>    
           <Route path="/MoreMentor" element={<MoreMentor/>}/>    
-
           <Route path='/MyWebinar' element={<MyWebinar/>}/>       
           <Route path='/MyTraining' element={<MyTraining/>}/>       
           <Route path='/PlacementResources' element={<PlacementResources/>}/>       
@@ -55,10 +53,9 @@ root.render(
           <Route path='/InternshipCertificate' element={<InternshipCertificate/>}/>       
           <Route path='/GenerateCertificate' element={<GenerateCertificate/>}/>       
           <Route path='/CloudComputing' element={<CloudComputing/>}/>       
-        
           <Route path='/PlacementSupport' element={<PlacementSupport/>}/>       
           <Route path='/SelectionProcess' element={<SelectionProcess/>}/>       
-
+         
         </Routes>
       </Router> 
   </React.StrictMode>

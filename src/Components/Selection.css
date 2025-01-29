@@ -22,15 +22,15 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.faq-item {
+.faqItem {
     border-bottom: 1px solid #ddd;
 }
 
-.faq-item:last-child {
+.faqItem:last-child {
     border-bottom: none;
 }
 
-.faq-question {
+.faqQuestion {
     background-color: #f7f7f8;
     padding: 15px 20px;
     cursor: pointer;
@@ -39,11 +39,11 @@
     align-items: center;
 }
 
-.faq-question:hover {
+.faqQuestion:hover {
     background-color: #e2e2e2;
 }
 
-.faq-answer {
+.faqAnswer {
     padding: 15px 20px;
     background-color: #ffffff;
 }

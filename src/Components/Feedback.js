@@ -1,5 +1,5 @@
 import React from 'react';
-import './Feedback.css';
+// import './Feedback.css';
 import { setRating } from './feedbackStar'; // Adjust the path as necessary
 
 const Feedback = () => {

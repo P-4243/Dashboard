@@ -7,10 +7,7 @@ body {
     background-color: #fff;
     
 }
-#root{
-  margin:10vw;
-width:70%;
-}
+
 .header-line {
   display: flex;
   align-items: center; 
