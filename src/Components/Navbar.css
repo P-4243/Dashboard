@@ -10,7 +10,7 @@ body {
       justify-content: space-between;
       margin: 0 0;/*or 1rem top*/
       color: white;
-      padding: 2vw;
+      padding: 0vw;
       text-align: left;
   }
   .header img{

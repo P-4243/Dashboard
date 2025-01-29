@@ -39,8 +39,8 @@ h5 {
 .cards {
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap; /* Enables wrapping for smaller screens */
-  margin-bottom: 2rem;
+ 
+ 
 }
 
 .card {
