@@ -25,7 +25,8 @@ import WebinarCertificates from "./MyCertificates/WebinarCertificates.js";
 import CloudComputing from "./MyWorkshop/CloudComputing.js";
 import Mentor from "./MyMentor/Mentor.js";
 import MoreMentor from "./MyMentor/MoreMentor.js";
-
+import Feedback from "./Components/Feedback.js";
+import FeedbackSubmitted from "./Components/FeedbackSubmitted.js";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -55,6 +56,8 @@ root.render(
           <Route path='/CloudComputing' element={<CloudComputing/>}/>       
           <Route path='/PlacementSupport' element={<PlacementSupport/>}/>       
           <Route path='/SelectionProcess' element={<SelectionProcess/>}/>       
+          <Route path='/Feedback' element={<Feedback/>}/>       
+          <Route path='/FeedbackSubmitted' element={<FeedbackSubmitted/>}/>       
          
         </Routes>
       </Router> 

@@ -1,7 +1,7 @@
 import React from 'react';
-// import './Feedback.css';
+import './Feedback.css';
 import { setRating } from './feedbackStar'; // Adjust the path as necessary
-
+import {Link} from "react-router-dom";
 const Feedback = () => {
   return (
     <div className="feedback-form-container">
@@ -42,7 +42,7 @@ const Feedback = () => {
           <span className="star" onClick={() => setRating(5)}>&#9733;</span>
         </div>
 
-        <button type="submit" className="submit-button">Submit</button>
+       <Link to="/FeedbackSubmitted"><button type="submit" className="submit-button">Submit</button></Link> 
       </form>
     </div>
   );

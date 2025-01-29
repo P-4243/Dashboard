@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./TrainingPage.css";
-
+import {Link} from "react-router-dom";
 const TrainingPage = ({ certificationImg, certificationTitle, trainingTitle }) => {
   const [activeFaq, setActiveFaq] = useState(null);
 
@@ -25,7 +25,7 @@ const TrainingPage = ({ certificationImg, certificationTitle, trainingTitle }) =
         <strong>Time:</strong> 1:00 PM - 2:30 PM EST
       </p>
       <button className="register-btn">
-        <a href="cyber reg.html">Register Now</a>
+        <Link to="/Feedback">Register Now</Link>
       </button>
 
       <h2 className="section-title odd">About Trainer</h2>

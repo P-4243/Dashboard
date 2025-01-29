@@ -16,7 +16,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height:50vw;
+  height:30vw;
   }
   .middle h1{
     font-size:1.5vw;
@@ -28,7 +28,8 @@
   }
   .middle img{
     height:10vw;
-  
+  border-radius: 50%;
+  margin-bottom: 50px;
   }
   .buttonBlue{
     font-size:1.2vw;

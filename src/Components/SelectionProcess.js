@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faChevronDown, faCircleXmark, faClipboardCheck } from '@fortawesome/free-solid-svg-icons';
 import "./Selection.css";
-
+import {Link} from "react-router-dom";
 const SelectionProcess = () => {
     const [activeIndex, setActiveIndex] = useState(null);
 
@@ -145,7 +145,7 @@ const SelectionProcess = () => {
 
             {/* Button positioned at the bottom right */}
             <div className="button-container">
-                <button className="faq-complete-button">Next Step</button>
+               <Link to="/Feedback"> <button className="faq-complete-button">Next Step</button></Link>
             </div>
         </div>
     );
