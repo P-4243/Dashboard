@@ -1,7 +1,7 @@
 import React from 'react';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
-
+import "./GenerateCertificate.css"
 function GenerateCertificate() {
   const handleDownload = (title) => {
     const input = document.getElementById(title);
@@ -19,7 +19,7 @@ function GenerateCertificate() {
         <div className="col-md-6">
           <h2>Webinars</h2>
           <div className="card" id="Career Guidance Webinar">
-            <img src="https://i.imgur.com/8x8t5X3.png" className="card-img-top" alt="Career Guidance Webinar" />
+            <img src="Rectangle 44.png" className="card-img-top" alt="Career Guidance Webinar" />
             <div className="card-body">
               <h5 className="card-title">Career Guidance Webinar</h5>
               <p className="card-text">100% Completed</p>
@@ -30,7 +30,7 @@ function GenerateCertificate() {
         <div className="col-md-6">
           <h2>Hackathon</h2>
           <div className="card" id="L&T EduTech Hackathon">
-            <img src="https://i.imgur.com/L8V4QhM.png" className="card-img-top" alt="L&T EduTech Hackathon" />
+            <img src="Hackathon-2-1024x1024 1.png" className="card-img-top" alt="L&T EduTech Hackathon" />
             <div className="card-body">
               <h5 className="card-title">L&T EduTech Hackathon</h5>
               <p className="card-text">100% Completed</p>
@@ -43,7 +43,7 @@ function GenerateCertificate() {
         <div className="col-md-6">
           <h2>Internships</h2>
           <div className="card" id="MERN Stack Development">
-            <img src="https://i.imgur.com/lN8J03J.png" className="card-img-top" alt="MERN Stack Development" />
+            <img src="Rectangle 36.png" className="card-img-top" alt="MERN Stack Development" />
             <div className="card-body">
               <h5 className="card-title">MERN Stack Development</h5>
               <p className="card-text">Completed</p>
@@ -54,7 +54,7 @@ function GenerateCertificate() {
         <div className="col-md-6">
           <h2>Research</h2>
           <div className="card" id="AI in Healthcare Research">
-            <img src="https://i.imgur.com/Nv4bTcJ.png" className="card-img-top" alt="AI in Healthcare Research" />
+            <img src="image77.png" className="card-img-top" alt="AI in Healthcare Research" />
             <div className="card-body">
               <h5 className="card-title">AI in Healthcare Research</h5>
               <p className="card-text">Completed</p>
