@@ -22,7 +22,7 @@ import MyProject from "./MyProject/MyProject.js";
 import GenerateCertificate from "./MyCertificates/GenerateCertificate.js";
 import InternshipCertificate from "./MyCertificates/InternshipCertificate.js";
 import WebinarCertificates from "./MyCertificates/WebinarCertificates.js";
-
+import CloudComputing from "./MyWorkshop/CloudComputing.js"
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
@@ -50,6 +50,7 @@ root.render(
           <Route path='/WebinarCertificates' element={<WebinarCertificates/>}/>       
           <Route path='/InternshipCertificate' element={<InternshipCertificate/>}/>       
           <Route path='/GenerateCertificate' element={<GenerateCertificate/>}/>       
+          <Route path='/CloudComputing' element={<CloudComputing/>}/>       
         
           <Route path='/PlacementSupport' element={<PlacementSupport/>}/>       
           <Route path='/SelectionProcess' element={<SelectionProcess/>}/>       

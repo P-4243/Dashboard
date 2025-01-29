@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import "./Cards.css";
 
 const Card = ({ imgSrc, altText, title, progress, status, feedbackUrl, navigateTo, isAddCard }) => {
@@ -47,11 +47,11 @@ const Cards = ({ sections = [] }) => {
             <div style={{margin:"5vw 0"}} key={index}>
               <h2>{section.title}</h2>
               <div className="diagonal-line"></div>
-              <div className="cards">
+              <Link to="/CloudComputing"> <div className="cards">
                 {section.cards.map((card, idx) => (
                   <Card key={idx} {...card} />
                 ))}
-              </div>
+              </div></Link>
             </div>
           ))}
         </section>

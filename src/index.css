@@ -1,6 +1,6 @@
 #root{
  
-  padding-left: 13vw;
+  padding-left: 10vw;
 }
 Link{
   text-decoration: none;
@@ -31,4 +31,8 @@ input[type="radio"]{
 }
 link{
   text-decoration: none;
+}
+a{
+  text-decoration: none;
+  color:rgb(6, 76, 161);
 }
