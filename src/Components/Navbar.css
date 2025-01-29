@@ -5,6 +5,8 @@ body {
     margin-top:0.5vw;
   }
   .header {
+    z-index: 999;
+    position:absolute;
       display: flex;
       align-items: center;
       justify-content: space-between;

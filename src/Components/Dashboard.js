@@ -20,8 +20,8 @@ const Dashboard = () => (
       <li>
         <a href="#" onClick={toggleDropdown}>My Mentorship ▼</a>
         <ul className="dropdown">
-        <Link to="/MyWorkshop">My Mentor</Link>
-        <Link to="/MyWorkshop">More Mentors</Link>
+        <Link to="/Mentor">My Mentor</Link>
+        <Link to="/MoreMentor">More Mentors</Link>
         </ul>
       </li>
 
