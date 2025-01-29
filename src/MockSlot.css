@@ -1,0 +1,18 @@
+.container
+{
+    border-radius:3vw;
+    width:70%;
+    margin-left:15vw;
+    justify-content: center;
+    justify-items: center;
+    display:flex;
+    flex-direction:column;
+   border:2px solid blue;
+}
+.Date, .Time{
+   
+margin:1vw;
+}
+input{
+    border-radius: 3vw;
+}

@@ -1,0 +1,78 @@
+.placement-support {
+  margin-left: 20px;
+  margin-top:-10vh;
+    padding: 0px;
+    width:100%;
+  }
+  #root{
+    width:100%;
+  }
+  .job-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 95px;
+   
+    margin: 40px 0;
+  }
+
+  .job-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 390px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .job-logo {
+    height: 10vw;
+    margin: 0 auto 10px;
+    display: block;
+  }
+  
+  .job-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .job-card p {
+    margin: 5px 0;
+  }
+  
+  .job-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .view-jd-button,
+  .apply-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .view-jd-button:hover,
+  .apply-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .view-more-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .view-more-button:hover {
+    background-color: #0056b3;
+  }
+  

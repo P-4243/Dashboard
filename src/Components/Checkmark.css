@@ -1,0 +1,40 @@
+.middle{
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+   text-align: center;
+  
+   font-size:1.4vw;
+   padding: 0;
+   margin: 0;
+   height: fit-content;
+  
+  }
+  .wholeMiddle{
+    display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:50vw;
+  }
+  .middle h1{
+    font-size:1.5vw;
+    font-weight: 400;
+  margin-bottom: 0;
+  }
+  .middle p{
+    margin: 0;
+  }
+  .middle img{
+    height:10vw;
+  
+  }
+  .buttonBlue{
+    font-size:1.2vw;
+    border-radius: 2vw;
+    padding:0.7vw 2vw;
+   background-color: #0071D1;
+   color:white;
+   border:none;
+  }

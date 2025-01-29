@@ -1,0 +1,100 @@
+body{
+  background-color: #007BFF;
+}
+.home-container {
+  display: flex;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  margin: 0 0 0 10vw;
+}
+
+.info-section {
+  display: flex;
+}
+
+.info-box {
+  width: 40vw;
+  background: linear-gradient(to right, black, #407BFF);
+  color: white;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.info-header {
+  width: 5vw;
+}
+
+.info-buttons {
+  margin-top: 1vw;
+}
+
+.btn {
+  padding: 1vw;
+  color: white;
+  border: none;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.btn-report {
+  background-color: #15A3B5;
+}
+
+.btn-change {
+  background-color: #F28A22;
+}
+
+.btn-edit {
+  background-color: #319C28;
+}
+
+.btn-logout {
+  background-color: #F22222;
+  margin-top: 1vw;
+}
+
+.engagement-box {
+  margin: 0 0 5vw 5vw;
+  height: 150px;
+  background: linear-gradient(to right, black, #407BFF);
+  padding: 30px;
+  border-radius: 5px;
+  width: 30vw;
+  color: white;
+}
+
+
+.progress-bar-container {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  width: 40%;
+  background-color: #007BFF;
+  padding: 5px;
+  color: white;
+  text-align: center;
+}
+
+.sections {
+  margin-top: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.btn-add {
+  background-color: white;
+  color: #15A3B5;
+  border: none;
+}

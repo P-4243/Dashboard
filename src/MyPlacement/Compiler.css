@@ -1,0 +1,88 @@
+
+.compiler-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .compiler-header {
+    display: flex;
+    align-items: center;
+  
+    margin-bottom: 10px;
+  }
+ 
+  h2 {
+    font-size: 25px;
+  }
+  
+ 
+  .compiler-content {
+
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .editor-section {
+    margin-top: 9px;
+    flex: 1;
+  }
+  
+  .language-select select {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #1188ff;
+    border-radius: 4px;
+    font-size: 23px;
+  color:#1188ff;
+  }
+  
+  .code-editor {
+    width: 100%;
+    height: 250px;
+    font-family: monospace;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+  }
+  
+  .run-button {
+    display: block;
+    margin-top: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 23px;
+  }
+  
+  .run-button:hover {
+    background: #0056b3;
+  }
+  
+  .output-section {
+    flex: 1;
+  }
+  
+  .output-section h3 {
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  
+  .result-area {
+    width: 97%;
+    height: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f9f9f9;
+    font-family: monospace;
+    font-size: 23px;
+    overflow: auto;
+  }
+  

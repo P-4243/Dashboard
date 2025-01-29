@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .feedback-form-container {
+    width: 600px;
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #0071D1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h2 {
+    color: #03468A;
+    margin-bottom: 10px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Input and Textarea Styles */
+  label {
+    font-size: 14px;
+    color: #0071D1;
+    margin-top: 10px;
+    text-align: left;
+  }
+  input
+  {
+    width: 100%;
+    padding: 1%;
+    margin-top: 5px;
+    border: 1px solid #0071D1;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  /* Submit Button Styles */
+  .submit-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #155bb5;
+  }
+  
+  /* Star Rating Styles */
+/* Feedback.css */
+
+.star {
+    font-size: 24px;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .star.active {
+    color: gold;
+  }
+  
+  

@@ -1,0 +1,131 @@
+
+.course-page {
+    font-family: Arial, sans-serif;
+    margin:20px 50px;
+  }
+  
+  .course-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+  }
+  
+  
+  
+  h2 {
+    font-size: 25px;
+  }
+  
+ 
+  .course-content {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .video-section {
+    flex: 2;
+    margin-left:50px;
+  }
+  
+  .video-placeholder {
+    width: 70%;
+    height: 350px;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 8px;
+  }
+  
+  .play-button {
+    font-size: 50px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .course-info {
+    margin-top: 25px;
+  }
+  
+  .course-info p {
+    font-size: 23px;
+    font-weight: bold;
+  }
+  
+  .course-meta {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 23px;
+  }
+  
+  .course-extra {
+    font-size: 23px;
+    color: #555;
+  }
+  
+  .compiler-button {
+    background: #007bff;
+    margin-top:40px;
+    font-size: 23px;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .compiler-button:hover {
+    background: #0056b3;
+  }
+  
+
+  .course-list {
+    flex: 1;
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+    margin-left:-70px;
+  }
+  
+  .list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 23px;
+    cursor: pointer;
+  }
+  
+  .content-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .content-item input {
+    margin-right: 10px;
+  }
+  
+  .content-item label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 23px;
+  }
+  
+  .duration {
+    font-size: 15px;
+    color: #888;
+  }
+  

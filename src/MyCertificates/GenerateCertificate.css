@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .card {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .card-item {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+  }
+  
+  .card-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-item h3 {
+    margin-top: 10px;
+  }
+  
+  .card-item .progress {
+    background-color: #eee;
+    border-radius: 5px;
+    height: 10px;
+    margin: 10px 0;
+    overflow: hidden;
+  }
+  
+  .card-item .progress-bar {
+    background-color: #4CAF50;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .card-item button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 10px;
+  }

@@ -1,0 +1,95 @@
+.interview-topics {
+  font-family: Arial, sans-serif;
+  /* margin: 0 auto; */
+  max-width: 800px;
+  /* height: 80px; */
+  padding: 20px;
+}
+
+header h1 {
+  color: #0073e6;
+  text-align: left;
+  padding-left: 50px;
+  padding-bottom: 30px;
+  
+}
+
+h1 span {
+  color: black;
+  font-size: 50px;
+}
+
+
+
+section{
+  padding-bottom: 30px;
+}
+
+.intro h2,
+.topics-list h3,
+.questions h3 {
+  color: #333;
+  text-align: left;
+  padding-left: 130px;
+  padding-bottom: 15px;
+}
+
+.intro p {
+  font-size: 16px;
+  color: #555;
+  text-align: left;
+  padding-left: 130px;
+  
+}
+
+
+
+.topics-list ol ,
+.questions ul {
+  text-align: left;
+  padding-left: 150px;
+  font-size: 16px;
+  color: #407BFF;
+  
+}
+
+
+.topics-list ol li,
+.questions ul li {
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+.topics-list ol li:hover,
+.questions ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* .faq-button {
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  margin: 20px auto;
+}
+
+.faq-section {
+  margin-top: 20px;
+}
+
+.faq-section h4 {
+  color: #0073e6;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.faq-section p {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+ */

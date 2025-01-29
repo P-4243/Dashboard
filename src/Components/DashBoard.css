@@ -1,0 +1,105 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: poppins;
+  display: flex;
+}
+
+.sidebar {
+  position: fixed; /* Fix the sidebar to the left */
+  top: 0; /* Align it to the top */
+  left: 0; /* Align it to the left corner */
+  width: 270px; /* Sidebar width */
+  background-color: #0070d144; /* Light blue background */
+  color: #ffffff; /* Text color */
+  letter-spacing: 1px;
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Reset margin */
+  overflow-y: auto; /* Enable vertical scrolling for long content */
+}
+
+.user-profile {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #0071D1;
+}
+
+.user-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  padding: 5px;
+}
+
+.user-profile h3 {
+  margin-top: 10px;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.menu li a .icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.menu li a:hover {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #0071D1;
+}
+
+.dropdown {
+  display: none;
+  list-style-type: none;
+  padding-left: 20px;
+  background-color: #EEEEEE;
+}
+
+.dropdown li a {
+  padding: 10px 20px;
+  color: #000000;
+}
+
+.logo {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+.logo p {
+  margin-top: 50px;
+  color: #ffffff;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 270px; /* Adjust main content to avoid overlapping with the sidebar */
+  display: flex;
+  flex-direction: column;
+}
